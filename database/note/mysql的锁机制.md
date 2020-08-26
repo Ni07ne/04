@@ -172,10 +172,9 @@ insert into tab_with_index values(1,'1'),(2,'2'),(3,'3'),(4,'4');
 |     select * from tab_with_indexwhere id = 1 for update      |                                                              |
 |                                                              |     select * from tab_with_indexwhere id = 2 for update;     |
 
-3、由于mysql的行锁是针对索引加的锁，不是针对记录加的锁，所以虽然是访问不同行的记录，但是如果是使用相同的索引键，是会出现冲突的。
+3、由于mysql的行锁是针对索引加的锁，不是针对记录加的锁，所以虽然是访问不同行的记录，但是依然无法访问到具体的数据
 
 ```sql
-alter table tab_with_index drop index id;
 insert into tab_with_index  values(1,'4');
 ```
 
