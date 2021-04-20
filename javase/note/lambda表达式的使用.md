@@ -12,8 +12,6 @@ lambda可以极大的减少代码冗余，同时代码的可读性要好过冗�
 
 ​		LambdaParameters -> LambdaBody
 
-![1570942180646](C:\Users\seanzhou\AppData\Roaming\Typora\typora-user-images\1570942180646.png)
-
 ​		args->expr或者（object ... args）->{函数式接口抽象方法实现逻辑}
 
 ​		1、（）参数的个数，根据函数式接口里面抽象的参数个数来决定，当参数只有一个的时候，（）可以省略
